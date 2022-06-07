@@ -1,0 +1,18 @@
+{
+    "name": "brasilsuleducacional/datilografia",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor-Bergamo",
+            "email": "victorhbbergamo@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
