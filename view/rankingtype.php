@@ -1,4 +1,4 @@
-<div class="ranking-players">
+<div class="ranking-players" style="border: none;">
     <div class="ranking-header">
         <div class="ranking-options">
             <div class="ranking-config">

@@ -25,7 +25,7 @@ $(function () {
             $.ajax({
                 url: 'https://datilografia.brasilsuleducacional.com.br/source/rankingclass.php',
                 method: 'POST',
-                data: { badge = badge, type: "path" },
+                data: { badge: badge, type: "path" },
                 dataType: 'json',
                 success: function (response) {
                     theResponse = response;
@@ -71,5 +71,5 @@ $(function () {
 
     table($orderRanking.val());
 
-    //$rankingTable.parent().hide();
+    $rankingTable.parent().hide();
 })
