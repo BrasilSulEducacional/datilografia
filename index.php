@@ -82,7 +82,6 @@ require __DIR__ . "/source/functions.php";
     <script src="assets/js/popper.min.js"></script>
 
     <header>
-        <h1>teste</h1>
         <nav class="navbar">
             <ul class="navbar-menu">
                 <li><a class="<?= (isset($_GET["pg"]) && $_GET["pg"] == "home" ? "active" : "") ?>" data-url="home.php" href="?pg=home"> <b>Datilografia </b> </a></li>
