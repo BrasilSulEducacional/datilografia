@@ -2,7 +2,8 @@ a .fa-trophy {
     color: #e9d62f;
 }
 
-.ranking-players, .ranking-class-players {
+.ranking-players,
+.ranking-class-players {
     min-width: 55%;
     display: flex;
     flex-direction: column;
@@ -294,6 +295,18 @@ a .fa-trophy {
     border-radius: var(--border-radius);
     padding: 15px;
     background-color: var(--box-background-color);
+}
+
+.leaderboard:hover {
+    border: 5px solid var(--box-border-color);
+    transition: 1.5s;
+
+}
+
+.leaderboard-header {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
 }
 
 .ranking-class-images img {
