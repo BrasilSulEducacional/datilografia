@@ -57,7 +57,12 @@ $(function () {
                 url: 'https://datilografia.brasilsuleducacional.com.br/source/rankingclass.php?badge=' + badge,
                 dataSrc: '',
                 success: function (response) {
-                    console.log("completado")
+                    console.log("completado"),
+                        function (d, cb) {
+                            fetch(response)
+                                .then(response => response.json())
+                                .then(data => cb(data));
+                        }
                 }
             },
             columns: [

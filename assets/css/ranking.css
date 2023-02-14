@@ -295,12 +295,11 @@ a .fa-trophy {
     border-radius: var(--border-radius);
     padding: 15px;
     background-color: var(--box-background-color);
+    transition: 1.5s;
 }
 
 .leaderboard:hover {
     border: 5px solid var(--box-border-color);
-    transition: 1.5s;
-
 }
 
 .leaderboard-header {
