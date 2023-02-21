@@ -45,6 +45,7 @@ $(function () {
             destroy: true,
             bInfo: false,
             bLengthChange: false,
+
             language: {
                 "paginate": {
                     "first": "Primeiro",
@@ -54,23 +55,20 @@ $(function () {
                 },
             },
             ajax: {
-                url: 'https://datilografia.brasilsuleducacional.com.br/source/rankingclass.php?badge=' + badge,
+                url: './source/rankingclass.php?badge=' + badge,
                 dataSrc: '',
-                success: function (response) {
-                    console.log("completado"),
-                        function (d, cb) {
-                            fetch(response)
-                                .then(response => response.json())
-                                .then(data => cb(data));
-                        }
-                }
+                type: 'post'
             },
             columns: [
                 { data: 'colocacao' },
                 { data: 'nome_badge' },
                 { data: 'pts' },
                 { data: 'nome' },
-            ]
+            ],
+            order: [[1, 'desc']],
+            rowGroup: {
+                dataSrc: 2
+            }
         });
     }
 
