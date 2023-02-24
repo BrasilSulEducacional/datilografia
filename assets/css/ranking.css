@@ -308,6 +308,7 @@ a .fa-trophy {
     font-weight: bold;
 }
 
+
 .ranking-class-images img {
     width: 120px;
 }
@@ -332,3 +333,15 @@ a .fa-trophy {
 .ranking-second-place .player-name {}
 
 .ranking-third-place .player-name {}
+
+#rankingClassTable tbody .group td {
+    text-align: center;
+}
+
+#rankingClassTable tbody .group td img {
+    width: 55px;
+}
+
+#rankingClassTable tbody tr td {
+    text-align: center;
+}

@@ -1,7 +1,10 @@
-<div class="ranking-class-players" style="border: none;">
+<div class="ranking-class-players" style="border: none; width: 100%;">
     <div class="ranking-class-header">
         <div class="ranking-config">
-            <div class="group-config">
+            <span style="font-weight: 900; font-size: 2em;">
+                Ranking por Clasificação
+            </span>
+            <!-- <div class="group-config">
                 <span>Ordenar por Ranking:</span>
                 <select name="orderRanking" id="orderRanking">
                     <optgroup label="Bronze">
@@ -37,25 +40,25 @@
                         <option value="18" selected>Grão-Mestre</option>
                     </optgroup>
                 </select>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="ranking-class-main" style="display: flex; justify-content: center; align-items: center;">
         <div class="ranking-class-images">
-            <img src="https://datilografia.brasilsuleducacional.com.br/assets/images/ranking/" style="display: none;" class="ranking-image-lg">
         </div>
         <div class="ranking-class-table">
             <table id="rankingClassTable" class="stripe hover cell-border">
                 <thead>
                     <tr>
                         <th>Colocação</th>
+                        <th>image</th>
                         <th>Ranking</th>
                         <th>Pontos</th>
                         <th>Aluno</th>
+                        <th>id_badge</th>
                     </tr>
                 </thead>
                 <tbody>
-
                 </tbody>
             </table>
         </div>
