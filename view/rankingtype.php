@@ -10,7 +10,7 @@
                 <div class="difficult-buttons">
                     <button id="diffEasy" class="active" data-diff="easy" style="display: none;">Fácil</button>
                     <!-- <button id="diffMedium" data-diff="medium">Médio</button>
-                        <button id="diffHard" data-diff="hard">Difícil</button> -->
+                    <button id="diffHard" data-diff="hard">Difícil</button> -->
                     <div class="group-config">
                         <span>Mês:</span>
                         <select name="month" id="month">

@@ -2,7 +2,8 @@ a .fa-trophy {
     color: #e9d62f;
 }
 
-.ranking-players, .ranking-class-players {
+.ranking-players,
+.ranking-class-players {
     min-width: 55%;
     display: flex;
     flex-direction: column;
@@ -294,7 +295,19 @@ a .fa-trophy {
     border-radius: var(--border-radius);
     padding: 15px;
     background-color: var(--box-background-color);
+    transition: 1.5s;
 }
+
+.leaderboard:hover {
+    border: 5px solid var(--box-border-color);
+}
+
+.leaderboard-header {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
 
 .ranking-class-images img {
     width: 120px;
@@ -320,3 +333,15 @@ a .fa-trophy {
 .ranking-second-place .player-name {}
 
 .ranking-third-place .player-name {}
+
+#rankingClassTable tbody .group td {
+    text-align: center;
+}
+
+#rankingClassTable tbody .group td img {
+    width: 55px;
+}
+
+#rankingClassTable tbody tr td {
+    text-align: center;
+}

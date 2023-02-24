@@ -28,16 +28,7 @@ if (!empty($_GET)) {
         }
     }
 
-    $ranking = $mysqli->query("SELECT RANK() OVER(ORDER BY pts DESC) AS 'colocacao', 
-    classificacao_alunos.id_badge, 
-    classificacao_alunos.pts, 
-    classificacao_alunos.id_aluno, 
-    alunos.nome, 
-    classificacao_badges.nome AS 'nome_badge' 
-    FROM classificacao_alunos
-    INNER JOIN classificacao_badges ON classificacao_alunos.id_badge = classificacao_badges.id 
-    INNER JOIN alunos ON classificacao_alunos.id_aluno = alunos.id    
-    WHERE classificacao_alunos.id_badge = {$badge}");
+    $ranking = $mysqli->query("SELECT CONCAT(RANK() OVER(PARTITION BY id_badge ORDER BY pts desc),'º') AS 'colocacao', classificacao_alunos.id_badge, classificacao_badges.image, classificacao_alunos.pts, classificacao_alunos.id_aluno, alunos.nome, classificacao_badges.nome AS 'nome_badge' FROM classificacao_alunos INNER JOIN classificacao_badges ON classificacao_alunos.id_badge = classificacao_badges.id INNER JOIN alunos ON classificacao_alunos.id_aluno = alunos.id");
 
     $ranking = $ranking->fetch_all(MYSQLI_ASSOC);
 
